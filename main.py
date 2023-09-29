@@ -25,3 +25,12 @@ def get_rawdata():
     source_path='C:\\Users\\NOUDJICHRIS\\Documents\\titanic.csv'
     destination_path ='C:\\Users\\NOUDJICHRIS\\Documents\\IA BD II\\Outil versioning\\Examen Outil Versioning\\data\\raw'
     shutil.copy(source_path,destination_path)
+
+#nettoyer les données
+def clean_data():
+    # Identification des valeurs manquantes
+    df = pd.read_csv("data/raw/titanic.csv")
+    missing_values = df.isnull().sum()
+
+    # Suppression des données dupliquées
+    df.drop_duplicates(inplace=True)
