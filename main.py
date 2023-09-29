@@ -40,3 +40,9 @@ def clean_data():
 
     # Affichage des statistiques
     print(df.describe())
+
+if __name__ == "__main__":
+    create_repertories(dir_list())
+    create_files(file_list())
+    get_rawdata()
+    clean_data()
