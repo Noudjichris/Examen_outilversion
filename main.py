@@ -23,7 +23,7 @@ def file_list():
 #copier le fichier csc titanic de mon document vers le dossier raw du dossier
 def get_rawdata():
     source_path='C:\\Users\\NOUDJICHRIS\\Documents\\titanic.csv'
-    destination_path ='C:\\Users\\NOUDJICHRIS\\Documents\\IA BD II\\Outil versioning\\Examen Outil Versioning\\data\\raw'
+    destination_path ='data/raw'
     shutil.copy(source_path,destination_path)
 
 #nettoyer les données
