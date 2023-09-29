@@ -37,3 +37,6 @@ def clean_data():
 
     # Sauvegarder les données nettoyées dans le dossier cleaned data
     df.to_csv("data/cleaned/titanic.csv")
+
+    # Affichage des statistiques
+    print(df.describe())
