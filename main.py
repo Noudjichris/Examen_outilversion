@@ -34,3 +34,6 @@ def clean_data():
 
     # Suppression des données dupliquées
     df.drop_duplicates(inplace=True)
+
+    # Sauvegarder les données nettoyées dans le dossier cleaned data
+    df.to_csv("data/cleaned/titanic.csv")
